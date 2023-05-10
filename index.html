@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function generateRandom() {
+            var randomNumber = Math.floor(Math.random() * 10000);
+            alert("Ваш пинкод: " + randomNumber)
+        }
+    </script>
 </head>
 <body>
-    <input type="tel" required pattern="[0-9]{10}">
-    <button onclick="generateRandom">Получить пинкод</button>
+    <input type="tel">
+    <button onclick="generateRandom()">Получить пинкод</button>
 </body>
-<script lang="javascript">
-    function generateRandom() {
-        var randomNumber =
-        Math.floor(Math.random() * 10000);
-        alert("Ваш пинкод: " + randomNumber)
-    }
-</script>
 </html>
