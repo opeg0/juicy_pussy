@@ -7,7 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="number">
-    <button onclick="alert('number')">Проверить</button>
+    <input type="tel" required pattern="[0-9]{10}">
+    <button onclick="generateRandom">Получить пинкод</button>
 </body>
+<script lang="javascript">
+    function generateRandom() {
+        var randomNumber =
+        Math.floor(Math.random() * 10000);
+        alert("Ваш пинкод: " + randomNumber)
+    }
+</script>
 </html>
